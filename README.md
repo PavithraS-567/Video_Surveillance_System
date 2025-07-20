@@ -1,17 +1,28 @@
-# Weapon Detection Surveillance System
+# Video Surveillance System - Weapon Detection
 
-This is a YOLOv8-based real-time weapon detection system that uses computer vision to identify weapons via a camera feed and sends alerts via email and Twilio SMS.
+A real-time weapon detection system using YOLOv8, capable of alerting via Email and Twilio SMS when a weapon is detected or a camera is blocked.
 
-## Features
+## 🔧 Features
 - Weapon detection using YOLOv8
-- Alerts via email and Twilio SMS
-- Camera blockage detection
-- Logging of all events
+- Blocked/partially blocked camera detection
+- Alerts via email and SMS (Twilio)
+- Auto-snapshots and logging
 
-## Requirements
-Install dependencies using:
+## 📁 Files
+- `VideoSurveillanceSystem.py`: Main file for live surveillance
+- `detection.py`: Simple test detection
+- `alert_log.txt`: Logs of all alerts
+- `.env`: **DO NOT UPLOAD** (contains credentials)
+
+## 📦 Requirements
+Install using:
 ultralytics
 opencv-python
 numpy
 python-dotenv
 twilio
+
+```bash
+pip install -r requirements.txt
+
+
